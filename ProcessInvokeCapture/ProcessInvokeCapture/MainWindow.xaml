@@ -1,0 +1,70 @@
+﻿<Window x:Class="ProcessInvokeCapture.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:viewmodels="clr-namespace:ProcessInvokeCapture.ViewModels"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        xmlns:cmd="clr-namespace:GalaSoft.MvvmLight.Command;assembly=GalaSoft.MvvmLight.Platform"
+        xmlns:converters="clr-namespace:ProcessInvokeCapture.Converters"
+        xmlns:local="clr-namespace:ProcessInvokeCapture"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Window.DataContext>
+        <viewmodels:MainWindowViewModel/>
+    </Window.DataContext>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Button Grid.Row="0" 
+                    Content="Process Refresh"
+                    Command="{Binding Path=ProcessListRefreshCommand}"/>
+            <ListBox Grid.Row="1"
+                     ItemsSource="{Binding Path=ProcessCollection}">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding Path=Title}"/>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+                <i:Interaction.Triggers>
+                    <i:EventTrigger EventName="SelectionChanged">
+                        <cmd:EventToCommand Command="{Binding Path=ProcessListSelectionChangedCommand}"
+                                            EventArgsConverter="{converters:SelectionChangedEventArgsConverter}"
+                                            PassEventArgsToCommand="True"/>
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>
+            </ListBox>
+        </Grid>
+        <Grid Grid.Column="1">
+            <ListBox
+                ItemsSource="{Binding Path=InvokeElementCollection}">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding Path=Name}"/>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+                <i:Interaction.Triggers>
+                    <i:EventTrigger EventName="SelectionChanged">
+                        <cmd:EventToCommand Command="{Binding Path=InvokeElementListSelectionChangedCommand}"
+                                            EventArgsConverter="{converters:SelectionChangedEventArgsConverter}"
+                                            PassEventArgsToCommand="True"/>
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>
+            </ListBox>
+        </Grid>
+        <Grid Grid.Column="2">
+            <ListBox
+                ItemsSource="{Binding Path=HistoryCollection}">
+                
+            </ListBox>
+        </Grid>
+    </Grid>
+</Window>
