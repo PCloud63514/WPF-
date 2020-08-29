@@ -1,0 +1,8 @@
+C:\Users\PCloud\Desktop\AI_Project\PCloud\MVVM\bin\Release\MVVM.dll
+C:\Users\PCloud\Desktop\AI_Project\PCloud\MVVM\bin\Release\MVVM.pdb
+C:\Users\PCloud\Desktop\AI_Project\PCloud\MVVM\bin\Release\CommonServiceLocator.dll
+C:\Users\PCloud\Desktop\AI_Project\PCloud\MVVM\obj\Release\MVVM.csprojAssemblyReference.cache
+C:\Users\PCloud\Desktop\AI_Project\PCloud\MVVM\obj\Release\MVVM.csproj.CoreCompileInputs.cache
+C:\Users\PCloud\Desktop\AI_Project\PCloud\MVVM\obj\Release\MVVM.csproj.CopyComplete
+C:\Users\PCloud\Desktop\AI_Project\PCloud\MVVM\obj\Release\MVVM.dll
+C:\Users\PCloud\Desktop\AI_Project\PCloud\MVVM\obj\Release\MVVM.pdb

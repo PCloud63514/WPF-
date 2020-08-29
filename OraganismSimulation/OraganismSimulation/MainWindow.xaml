@@ -1,0 +1,46 @@
+﻿<mah:MetroWindow x:Class="OraganismSimulation.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:mah="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:viewmodels="clr-namespace:OraganismSimulation.ViewModels"
+        xmlns:local="clr-namespace:OraganismSimulation"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <mah:MetroWindow.DataContext>
+        <viewmodels:MainWindowViewModel/>
+    </mah:MetroWindow.DataContext>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+            <DockPanel Grid.Row="0">
+                <Expander Header="속성" Padding="0">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Grid.Column="0">
+                            <Label Content="Unit Num:"/>
+                            <Label Content="MaxStep:"/>
+                        </StackPanel>
+                        <StackPanel Grid.Column="1">
+                            <mah:NumericUpDown Value="{Binding Path=UnitNum, Mode=OneWayToSource, FallbackValue=1}" Minimum="1"/>
+                            <mah:NumericUpDown Value="{Binding Path=MaxStep, Mode=OneWayToSource, FallbackValue=100}" Minimum="100"/>
+                        </StackPanel>
+                    </Grid>
+                </Expander>
+            </DockPanel>
+            <Button Grid.Row="1" Content="Ok" Width="150"/>
+        </Grid>
+        <Grid Grid.Column="1"/>
+    </Grid>
+</mah:MetroWindow>
