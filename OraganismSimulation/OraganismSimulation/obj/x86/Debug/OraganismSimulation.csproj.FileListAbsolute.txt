@@ -82,3 +82,5 @@ C:\Users\PCloud\Desktop\WPF-Projects\OraganismSimulation\OraganismSimulation\obj
 C:\Users\PCloud\Desktop\WPF-Projects\OraganismSimulation\OraganismSimulation\obj\x86\Debug\OraganismSimulation.csproj.CopyComplete
 C:\Users\PCloud\Desktop\WPF-Projects\OraganismSimulation\OraganismSimulation\obj\x86\Debug\OraganismSimulation.exe
 C:\Users\PCloud\Desktop\WPF-Projects\OraganismSimulation\OraganismSimulation\obj\x86\Debug\OraganismSimulation.pdb
+C:\Users\PCloud\Desktop\WPF-Projects\OraganismSimulation\OraganismSimulation\obj\x86\Debug\Views\PlanetView.g.cs
+C:\Users\PCloud\Desktop\WPF-Projects\OraganismSimulation\OraganismSimulation\obj\x86\Debug\Views\PlanetView.baml

@@ -5,6 +5,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:viewmodels="clr-namespace:OraganismSimulation.ViewModels"
+        xmlns:views="clr-namespace:OraganismSimulation.Views"
         xmlns:local="clr-namespace:OraganismSimulation"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
@@ -39,8 +40,16 @@
                     </Grid>
                 </Expander>
             </DockPanel>
-            <Button Grid.Row="1" Content="Ok" Width="150"/>
+
+            <Grid Grid.Row="1">
+                <Button Width="150"
+                    Content="{Binding Path=PlanetBtnText, FallbackValue=Start}"
+                    Command="{Binding Path=PlanetStartBtnClickCommand}">
+                </Button>
+            </Grid>
         </Grid>
-        <Grid Grid.Column="1"/>
+        <Grid Grid.Column="1">
+            <views:PlanetView/>
+        </Grid>
     </Grid>
 </mah:MetroWindow>
