@@ -10,7 +10,18 @@
     <UserControl.DataContext>
         <viewmodels:PlanetViewModel/>
     </UserControl.DataContext>
-    <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
-        <TextBlock Text="{Binding Path=Text}" FontSize="80"/>
+    <Grid Loaded="Grid_Loaded">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" HorizontalAlignment="Right">
+            <TextBlock Text="{Binding Path=Text}" FontSize="20"/>
+        </Grid>
+        <Grid Grid.Row="1" x:Name="Field">
+            <Canvas x:Name="canvas">
+                
+            </Canvas>
+        </Grid>
     </Grid>
 </UserControl>

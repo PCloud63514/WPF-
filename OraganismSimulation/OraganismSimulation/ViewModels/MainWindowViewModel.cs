@@ -2,7 +2,6 @@
 using MVVM.ViewModels;
 using OraganismSimulation.Core;
 using OraganismSimulation.Models;
-using System;
 using System.Windows.Input;
 
 namespace OraganismSimulation.ViewModels
@@ -89,7 +88,13 @@ namespace OraganismSimulation.ViewModels
 
         protected override void Initalize()
         {
+            
+        }
 
+        protected override void Dispose(bool disposing)
+        {
+            base.Dispose(disposing);
+            GlobalInstance.Instance.Broadcaster.Broadcast(Properties.Resources.Broadcast_ViewModel_Dispose, this, null); 
         }
     }
 }

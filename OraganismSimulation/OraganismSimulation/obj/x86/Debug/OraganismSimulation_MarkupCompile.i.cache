@@ -1,7 +1,7 @@
 ﻿OraganismSimulation
 
 
-winexe
+exe
 C#
 .cs
 C:\Users\PCloud\Desktop\WPF-Projects\OraganismSimulation\OraganismSimulation\obj\x86\Debug\
@@ -12,9 +12,9 @@ false
 C:\Users\PCloud\Desktop\WPF-Projects\OraganismSimulation\OraganismSimulation\App.xaml
 2-1632905037
 
-20989242784
+22-521471029
 80587353554
 MainWindow.xaml;Views\PlanetView.xaml;
 
-True
+False
 

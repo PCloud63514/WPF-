@@ -1,7 +1,7 @@
 ﻿OraganismSimulation
 
 
-winexe
+exe
 C#
 .cs
 c:\Users\PCloud\Desktop\WPF-Projects\OraganismSimulation\OraganismSimulation\obj\Debug\
@@ -12,7 +12,7 @@ DEBUG;TRACE
 c:\Users\PCloud\Desktop\WPF-Projects\OraganismSimulation\OraganismSimulation\App.xaml
 2-1473656752
 
-17-826219509
+19-1506772579
 80-605988612
 MainWindow.xaml;Views\PlanetView.xaml;
 

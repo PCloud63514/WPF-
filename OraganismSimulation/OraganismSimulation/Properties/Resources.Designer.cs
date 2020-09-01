@@ -61,6 +61,24 @@ namespace OraganismSimulation.Properties {
         }
         
         /// <summary>
+        ///   Model_Dispose과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string Broadcast_Model_Dispose {
+            get {
+                return ResourceManager.GetString("Broadcast_Model_Dispose", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Model_Initilize과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string Broadcast_Model_Initilize {
+            get {
+                return ResourceManager.GetString("Broadcast_Model_Initilize", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   PlanetStart과(와) 유사한 지역화된 문자열을 찾습니다.
         /// </summary>
         internal static string Broadcast_PlanetStart {
@@ -75,6 +93,33 @@ namespace OraganismSimulation.Properties {
         internal static string Broadcast_PlanetStop {
             get {
                 return ResourceManager.GetString("Broadcast_PlanetStop", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   StepChanged과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string Broadcast_StepChanged {
+            get {
+                return ResourceManager.GetString("Broadcast_StepChanged", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   ViewModel_Dispose과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string Broadcast_ViewModel_Dispose {
+            get {
+                return ResourceManager.GetString("Broadcast_ViewModel_Dispose", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   ViewModel_Initilize과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string Broadcast_ViewModel_Initilize {
+            get {
+                return ResourceManager.GetString("Broadcast_ViewModel_Initilize", resourceCulture);
             }
         }
     }

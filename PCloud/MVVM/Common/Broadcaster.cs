@@ -45,5 +45,17 @@ namespace MVVM.Common
         {
             this[broadcastName](sender, args);
         }
+
+        /// <summary>
+        /// Broadcast Event 전부 제거
+        /// </summary>
+        /// <param name="broadcastName"></param>
+        public void AllUnregister()
+        {
+            foreach (KeyValuePair<string, EventHandler<object>> kvp in this)
+            {
+                this[kvp.Key] = null;
+            }
+        }
     }
 }

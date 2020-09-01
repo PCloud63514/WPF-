@@ -117,10 +117,25 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Broadcast_Model_Dispose" xml:space="preserve">
+    <value>Model_Dispose</value>
+  </data>
+  <data name="Broadcast_Model_Initilize" xml:space="preserve">
+    <value>Model_Initilize</value>
+  </data>
   <data name="Broadcast_PlanetStart" xml:space="preserve">
     <value>PlanetStart</value>
   </data>
   <data name="Broadcast_PlanetStop" xml:space="preserve">
     <value>PlanetStop</value>
+  </data>
+  <data name="Broadcast_StepChanged" xml:space="preserve">
+    <value>StepChanged</value>
+  </data>
+  <data name="Broadcast_ViewModel_Dispose" xml:space="preserve">
+    <value>ViewModel_Dispose</value>
+  </data>
+  <data name="Broadcast_ViewModel_Initilize" xml:space="preserve">
+    <value>ViewModel_Initilize</value>
   </data>
 </root>

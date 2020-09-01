@@ -20,6 +20,8 @@ namespace MVVM.ViewModels
         {
             if (disposing)
             {
+
+                Console.WriteLine("Dispose");
                 BaseModel.Dispose(disposing);
             }
         }

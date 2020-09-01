@@ -1,11 +1,9 @@
-﻿using System;
-using MVVM.ViewModels;
-using OraganismSimulation.Core;
+﻿using OraganismSimulation.Core;
 using OraganismSimulation.Models;
 
 namespace OraganismSimulation.ViewModels
 {
-    public class PlanetViewModel : BaseViewModel
+    public class PlanetViewModel : BasicViewModel
     {
         #region Field
         private string _text;
@@ -41,7 +39,11 @@ namespace OraganismSimulation.ViewModels
 
         protected override void Initalize()
         {
-            //throw new NotImplementedException();
+        }
+
+        protected override void Dispose(bool disposing)
+        {
+            base.Dispose(disposing);
         }
     }
 }

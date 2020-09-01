@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{602EEF72-EF67-46B0-83B7-328E14A8DAD9}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
+    <OutputType>Exe</OutputType>
     <RootNamespace>OraganismSimulation</RootNamespace>
     <AssemblyName>OraganismSimulation</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
@@ -41,6 +41,9 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
     <PlatformTarget>x86</PlatformTarget>
     <OutputPath>bin\x86\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="CommonServiceLocator, Version=2.0.2.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
@@ -97,6 +100,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Core\Domain\Generation.cs" />
     <Compile Include="Core\GlobalInstance.cs" />
     <Compile Include="Core\Oraganism\Oraganism.cs" />
     <Compile Include="Core\Oraganism\OraganismFactory.cs" />
@@ -105,6 +109,7 @@
     <Compile Include="Core\PlanetManager.cs" />
     <Compile Include="Models\MainWindowModel.cs" />
     <Compile Include="Models\PlanetModel.cs" />
+    <Compile Include="ViewModels\BasicViewModel.cs" />
     <Compile Include="ViewModels\MainWindowViewModel.cs" />
     <Compile Include="ViewModels\PlanetViewModel.cs" />
     <Compile Include="Views\PlanetView.xaml.cs">
